@@ -199,13 +199,13 @@ bool isIsland (Gameboard& board) {
         for (int x = 0; x < BOARD_SIDE; ++x) {
             if (board.at(y).at(x) != 0) {
 
-                if (x > 0 and board.at(y).at(x-1) != 0) {
+                if (x-1 > 0 and board.at(y).at(x-1) != 0) {
                     continue;
-                } else if (x < BOARD_SIDE-1 and board.at(y).at(x+1) != 0) {
+                } else if (x+1 < BOARD_SIDE-1 and board.at(y).at(x+1) != 0) {
                     continue;
-                } else if (y > 0 and board.at(y-1).at(x) != 0){
+                } else if (y-1 > 0 and board.at(y-1).at(x) != 0){
                     continue;
-                } else if (y < BOARD_SIDE-1 and board.at(y+1).at(x) != 0) {
+                } else if (y+1 < BOARD_SIDE-1 and board.at(y+1).at(x) != 0) {
                     continue;
                 } else {
                 return true;

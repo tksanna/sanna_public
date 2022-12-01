@@ -1,0 +1,35 @@
+Ohjelman kirjoittaja: Sanna Nykänen
+Opiskelijanumero: 150384977
+Käyttäjätunnus: tvsany
+Sähköpostiosoite: sanna.nykanen@tuni.fi
+
+2048 Peliohjeet
+
+Peli kysyy käyttäjältä siemenlukua (seed value) ja maksimipistemäärää.
+Maksimipistemäärä on asetettu valmiiksi arvoon 2048 ja sen ylin arvo on 3000.
+
+Kun siemenluku ja maksimipistemäärä on jotain muuta kuin nolla, "Start" nappula aktivoituu.
+Pelin aloittamiseksi käyttäjän pitää painaa "Start" nappulaa. Start nappulan painaminen täyttää
+peliruudukon numeroilla, aktivoi nuolinäppäimet ja käynnistää ajastimen.
+
+Pelin lukuja liikutetaan pelilaudan oikealla puolella olevilla nuolinäppäimillä.
+Pelin voi aloittaa alusta painamalla "Reset" nappulaa, jolloin pelilauta alustetaan tyhjäksi
+ja käyttäjältä pyydetään jälleen siemenlukua ja käyttäjän on mahdollista muuttaa maksimipistemäärää.
+
+Käyttäjän ohjaamiseksi käytettävät napit aktivoituvat vasta kun niitä voi käyttää.
+Muuten näppäimet ovat "de-aktivoituja".
+
+Voitto tai häviötilanteissa "textBrowser" ikkunaan tulostuu ilmoitus pelin päättymisestä,
+MainWindow taustaväri vaihtuu ja pelikello pysähtyy.
+
+
+Ohjelmaan koodatut lisäominaisuudet:
+
+1. Sen sijaan, että ruutuun tulostettaisiin jokin numeromerkki tai -merkkejä, luku tulee näkyviin kuvana tai ikonina.
+- Pelin navigointinäppäimet (upButton, downButton, leftButton, rightButton) on korvattu suuntaa kuvaavilla kolmio ikoneilla.
+
+2. Käyttöliittymän taustaväri vaihtuu, kun pelaaja voittaa tai häviää (voitosta taustaväri muuttuu vihreäksi ja häviöstä
+punaiseksi). Uudelleenaloituksessa (reset) taustaväri palautuu ennalleen.
+
+3. Pelissä on ajastin, joka kertoo siihen mennessä käytetyn ajan. Ajastin pysähtyy reset nappulaa painaessa tai kun
+pelissä tapahtuu voitto/häviö tilanne.
